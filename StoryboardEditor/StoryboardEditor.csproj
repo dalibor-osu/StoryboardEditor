@@ -7,4 +7,18 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <None Update="Assets\dj_mag.osb">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="../StoryboardEditor.Storyboard/StoryboardEditor.Storyboard.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="PrettyLog" Version="1.0.0-alpha" />
+    </ItemGroup>
+
 </Project>
