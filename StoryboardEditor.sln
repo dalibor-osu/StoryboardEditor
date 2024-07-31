@@ -2,7 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoryboardEditor", "StoryboardEditor\StoryboardEditor.csproj", "{BC686A9B-B0D9-431F-9AFD-E06F1954ABA2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoryboardEditor.Storyboard", "StoryboardEditor.Storyboard\StoryboardEditor.Storyboard.csproj", "{4B0709AC-9C55-41BA-ACB0-09E3F861EE97}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoryboardEditor.OsuStoryboard", "StoryboardEditor.OsuStoryboard\StoryboardEditor.OsuStoryboard.csproj", "{4B0709AC-9C55-41BA-ACB0-09E3F861EE97}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StoryboardEditor.Utils", "StoryboardEditor.Utils\StoryboardEditor.Utils.csproj", "{15A67E67-D8AF-4F6C-8B15-1775E349DA58}"
 EndProject

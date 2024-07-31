@@ -1,4 +1,4 @@
-namespace StoryboardEditor.Storyboard.Commands;
+namespace StoryboardEditor.OsuStoryboard.Commands;
 
 public sealed class Loop
 {

@@ -1,7 +1,7 @@
-using StoryboardEditor.Storyboard.Enums;
+using StoryboardEditor.OsuStoryboard.Enums;
 using StoryboardEditor.Utils.OptionalValue;
 
-namespace StoryboardEditor.Storyboard.Commands;
+namespace StoryboardEditor.OsuStoryboard.Commands;
 
 public class ParameterCommand : StoryboardCommand
 {

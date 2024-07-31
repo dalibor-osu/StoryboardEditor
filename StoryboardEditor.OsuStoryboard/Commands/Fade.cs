@@ -1,7 +1,7 @@
 using System.Globalization;
 using StoryboardEditor.Utils.OptionalValue;
 
-namespace StoryboardEditor.Storyboard.Commands;
+namespace StoryboardEditor.OsuStoryboard.Commands;
 
 public sealed class Fade : StoryboardCommand
 {

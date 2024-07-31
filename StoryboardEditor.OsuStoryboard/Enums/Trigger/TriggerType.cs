@@ -1,4 +1,4 @@
-namespace StoryboardEditor.Storyboard.Enums.Trigger;
+namespace StoryboardEditor.OsuStoryboard.Enums.Trigger;
 
 public enum TriggerType
 {

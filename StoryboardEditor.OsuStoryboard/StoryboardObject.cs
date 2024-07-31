@@ -1,10 +1,10 @@
 using System.Globalization;
 using System.Numerics;
-using StoryboardEditor.Storyboard.Commands;
-using StoryboardEditor.Storyboard.Enums;
+using StoryboardEditor.OsuStoryboard.Commands;
+using StoryboardEditor.OsuStoryboard.Enums;
 using StoryboardEditor.Utils.OptionalValue;
 
-namespace StoryboardEditor.Storyboard;
+namespace StoryboardEditor.OsuStoryboard;
 
 public abstract class StoryboardObject
 {

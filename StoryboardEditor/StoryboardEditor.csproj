@@ -14,11 +14,12 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="../StoryboardEditor.Storyboard/StoryboardEditor.Storyboard.csproj" />
+        <ProjectReference Include="..\StoryboardEditor.OsuStoryboard\StoryboardEditor.OsuStoryboard.csproj" />
     </ItemGroup>
 
     <ItemGroup>
       <PackageReference Include="PrettyLog" Version="1.0.0-alpha" />
+      <PackageReference Include="Raylib-cs" Version="6.1.1" />
     </ItemGroup>
 
 </Project>

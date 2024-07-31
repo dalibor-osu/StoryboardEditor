@@ -1,4 +1,4 @@
-namespace StoryboardEditor.Storyboard.Enums;
+namespace StoryboardEditor.OsuStoryboard.Enums;
 
 public enum ParameterCommandType
 {

@@ -1,6 +1,6 @@
 using System.ComponentModel;
 
-namespace StoryboardEditor.Storyboard.Enums;
+namespace StoryboardEditor.OsuStoryboard.Enums;
 
 public enum Layer
 {

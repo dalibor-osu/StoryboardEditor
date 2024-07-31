@@ -1,6 +1,6 @@
-using StoryboardEditor.Storyboard.Enums.Trigger;
+using StoryboardEditor.OsuStoryboard.Enums.Trigger;
 
-namespace StoryboardEditor.Storyboard.Commands;
+namespace StoryboardEditor.OsuStoryboard.Commands;
 
 public sealed class HitSoundTrigger : Trigger
 {
@@ -17,7 +17,7 @@ public sealed class HitSoundTrigger : Trigger
         SampleSet additionSampleSet = SampleSet.All,
         Addition addition = Addition.None,
         int customSampleSet = 0)
-            : base(TriggerType.HitSound, startTime, endTime, childCommands)
+            : base(Enums.Trigger.TriggerType.HitSound, startTime, endTime, childCommands)
     {
         SampleSet = sampleSet;
         AdditionSampleSet = additionSampleSet;

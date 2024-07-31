@@ -2,7 +2,7 @@ using System.Globalization;
 using System.Numerics;
 using StoryboardEditor.Utils.OptionalValue;
 
-namespace StoryboardEditor.Storyboard.Commands;
+namespace StoryboardEditor.OsuStoryboard.Commands;
 
 public sealed class VectorScale : StoryboardCommand
 {

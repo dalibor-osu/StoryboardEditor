@@ -1,6 +1,6 @@
-using StoryboardEditor.Storyboard.Enums;
+using StoryboardEditor.OsuStoryboard.Enums;
 
-namespace StoryboardEditor.Storyboard;
+namespace StoryboardEditor.OsuStoryboard;
 
 public class StoryboardAnimation : StoryboardObject
 {

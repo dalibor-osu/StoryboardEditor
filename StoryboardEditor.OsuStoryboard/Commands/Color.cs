@@ -2,7 +2,7 @@ using System.Globalization;
 using StoryboardEditor.Utils.OptionalValue;
 using StoryboardEditor.Utils.Types;
 
-namespace StoryboardEditor.Storyboard.Commands;
+namespace StoryboardEditor.OsuStoryboard.Commands;
 
 public sealed class Color : ParameterCommand
 {

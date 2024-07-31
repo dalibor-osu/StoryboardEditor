@@ -1,6 +1,6 @@
-using StoryboardEditor.Storyboard.Enums.Trigger;
+using StoryboardEditor.OsuStoryboard.Enums.Trigger;
 
-namespace StoryboardEditor.Storyboard.Commands;
+namespace StoryboardEditor.OsuStoryboard.Commands;
 
 public class Trigger
 {

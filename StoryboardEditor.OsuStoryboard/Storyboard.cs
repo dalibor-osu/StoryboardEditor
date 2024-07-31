@@ -1,10 +1,10 @@
 ﻿using System.Text;
 using Microsoft.Extensions.Logging;
-using StoryboardEditor.Storyboard.Commands;
+using StoryboardEditor.OsuStoryboard.Commands;
 using StoryboardEditor.Utils.OptionalValue;
 using static PrettyLogSharp.PrettyLogger;
 
-namespace StoryboardEditor.Storyboard;
+namespace StoryboardEditor.OsuStoryboard;
 
 public sealed class Storyboard
 {
