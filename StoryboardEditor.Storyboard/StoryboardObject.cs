@@ -1,5 +1,6 @@
 using System.Globalization;
 using System.Numerics;
+using StoryboardEditor.Storyboard.Commands;
 using StoryboardEditor.Storyboard.Enums;
 using StoryboardEditor.Utils.OptionalValue;
 
@@ -11,7 +12,19 @@ public abstract class StoryboardObject
     public Origin Origin { get; init; }
     public string FilePath { get; init; }
     public Vector2 Position { get; init; }
+    public StoryboardCommand[] Commands { get; private set; } = Array.Empty<StoryboardCommand>();
 
+    public bool SetCommands(StoryboardCommand[] commands)
+    {
+        if (Commands.Length != 0)
+        {
+            return false;
+        }
+
+        Commands = commands;
+        return true;
+    }
+    
     public static Optional<StoryboardObject> FromStoryboardLine(string line)
     {
         string[] properties = line.Split(',');

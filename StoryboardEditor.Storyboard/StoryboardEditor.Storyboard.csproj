@@ -9,5 +9,9 @@
     <ItemGroup>
         <ProjectReference Include="../StoryboardEditor.Utils/StoryboardEditor.Utils.csproj" />
     </ItemGroup>
+    
+    <ItemGroup>
+      <PackageReference Include="PrettyLog" Version="1.0.0-alpha" />
+    </ItemGroup>
 
 </Project>

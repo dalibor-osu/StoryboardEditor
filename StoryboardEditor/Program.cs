@@ -4,7 +4,7 @@ using PrettyLogSharp;
 using StoryboardEditor.Storyboard;
 using static PrettyLogSharp.PrettyLogger;
 
-string storyboardFilePath = "Assets/dj_mag.osb";
+const string storyboardFilePath = "Assets/dj_mag.osb";
 
 Log("Parsing storyboard file at " + storyboardFilePath, LogLevel.Debug);
 
@@ -16,6 +16,9 @@ if (storyboard.HasValue)
 {
     Log($"Storyboard was successfully parsed with {storyboard.Value.Objects.Length} objects!", LogType.Success);
     Log($"Parsing took {stopwatch.ElapsedMilliseconds} milliseconds.", LogType.Success);
+
+    var maxCommandsLength = storyboard.Value.Objects.MaxBy(x => x.Commands.Length);
+    Log($"Max amount of commands on a single object was {maxCommandsLength}", LogLevel.Debug);
 }
 else
 {

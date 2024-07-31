@@ -1,8 +1,9 @@
 namespace StoryboardEditor.Utils.OptionalValue;
 
-public class Optional<T>
+public sealed class Optional<T>
 {
     public bool HasValue { get; }
+    public bool HasError => !HasValue;
     
     private readonly OptionalError? _error;
 

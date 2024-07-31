@@ -2,7 +2,7 @@ using System.Text;
 
 namespace StoryboardEditor.Utils.OptionalValue;
 
-public class OptionalError
+public sealed class OptionalError
 {
     public OptionalErrorType ErrorType { get; init; }
     public string Message { get; init; } = string.Empty;
@@ -22,6 +22,13 @@ public class OptionalError
     public OptionalError(OptionalErrorType errorType, string message, OptionalError innerError)
     {
         ErrorType = errorType;
+        Message = message;
+        InnerError = innerError;
+    }
+
+    public OptionalError(string message, OptionalError innerError)
+    {
+        ErrorType = innerError.ErrorType;
         Message = message;
         InnerError = innerError;
     }
