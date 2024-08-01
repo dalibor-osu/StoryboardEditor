@@ -1,4 +1,4 @@
-namespace StoryboardEditor.Utils.OptionalValue;
+namespace StoryboardEditor.Types.OptionalValue;
 
 public sealed class Optional<T>
 {

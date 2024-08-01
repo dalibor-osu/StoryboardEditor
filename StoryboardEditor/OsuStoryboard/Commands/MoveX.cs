@@ -1,5 +1,5 @@
 using System.Globalization;
-using StoryboardEditor.Utils.OptionalValue;
+using StoryboardEditor.Types.OptionalValue;
 
 namespace StoryboardEditor.OsuStoryboard.Commands;
 

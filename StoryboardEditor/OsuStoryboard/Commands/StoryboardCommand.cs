@@ -1,6 +1,6 @@
 using System.Globalization;
 using StoryboardEditor.OsuStoryboard.Enums;
-using StoryboardEditor.Utils.OptionalValue;
+using StoryboardEditor.Types.OptionalValue;
 
 namespace StoryboardEditor.OsuStoryboard.Commands;
 

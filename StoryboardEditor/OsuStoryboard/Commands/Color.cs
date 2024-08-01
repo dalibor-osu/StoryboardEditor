@@ -1,6 +1,6 @@
 using System.Globalization;
-using StoryboardEditor.Utils.OptionalValue;
-using StoryboardEditor.Utils.Types;
+using StoryboardEditor.Types;
+using StoryboardEditor.Types.OptionalValue;
 
 namespace StoryboardEditor.OsuStoryboard.Commands;
 

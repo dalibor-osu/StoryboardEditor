@@ -1,4 +1,4 @@
-namespace StoryboardEditor.Utils.Types;
+namespace StoryboardEditor.Types;
 
 public struct Color3
 {

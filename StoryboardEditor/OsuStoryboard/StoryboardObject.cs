@@ -2,7 +2,7 @@ using System.Globalization;
 using System.Numerics;
 using StoryboardEditor.OsuStoryboard.Commands;
 using StoryboardEditor.OsuStoryboard.Enums;
-using StoryboardEditor.Utils.OptionalValue;
+using StoryboardEditor.Types.OptionalValue;
 
 namespace StoryboardEditor.OsuStoryboard;
 

@@ -1,7 +1,7 @@
 ﻿using System.Text;
 using Microsoft.Extensions.Logging;
 using StoryboardEditor.OsuStoryboard.Commands;
-using StoryboardEditor.Utils.OptionalValue;
+using StoryboardEditor.Types.OptionalValue;
 using static PrettyLogSharp.PrettyLogger;
 
 namespace StoryboardEditor.OsuStoryboard;

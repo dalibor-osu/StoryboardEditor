@@ -1,6 +1,6 @@
 using System.Text;
 
-namespace StoryboardEditor.Utils.OptionalValue;
+namespace StoryboardEditor.Types.OptionalValue;
 
 public sealed class OptionalError
 {
