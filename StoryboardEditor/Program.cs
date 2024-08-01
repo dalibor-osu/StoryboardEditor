@@ -1,2 +1,2 @@
 ﻿using StoryboardEditor;
-new Game().StartGame();
+new Editor().StartGame();

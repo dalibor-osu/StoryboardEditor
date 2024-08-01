@@ -1,16 +1,17 @@
 using System.Numerics;
 using Raylib_cs;
 using StoryboardEditor.Scenes;
+using StoryboardEditor.Sound;
 using static PrettyLogSharp.PrettyLogger;
 
 namespace StoryboardEditor;
 
-public class Game
+public class Editor
 {
     private const int DefaultScreenWidth = 1280;
     private const int DefaultScreenHeight = 720;
     private const int TargetFps = 120;
-    private const string GameTitle = "Storyboard Editor";
+    private const string WindowTitle = "Storyboard Editor";
     
     public static int WindowWidth { get; private set; }
     public static int WindowHeight { get; private set; }
@@ -30,6 +31,8 @@ public class Game
     {
         while (!Raylib.WindowShouldClose() && !_exit)
         {
+            SoundManager.Instance.UpdateMusicStreams();
+            
             Raylib.BeginDrawing();
 
                 Raylib.ClearBackground(Color.RayWhite);
@@ -51,7 +54,7 @@ public class Game
         Raylib.SetTraceLogLevel(TraceLogLevel.Error);
 #endif
         Raylib.SetConfigFlags(ConfigFlags.ResizableWindow);
-        Raylib.InitWindow(DefaultScreenWidth, DefaultScreenHeight, GameTitle);
+        Raylib.InitWindow(DefaultScreenWidth, DefaultScreenHeight, WindowTitle);
         Raylib.SetExitKey(KeyboardKey.Insert);
         Raylib.InitAudioDevice();
         Raylib.SetTargetFPS(TargetFps);
@@ -71,11 +74,14 @@ public class Game
         
         _sceneManager.AddScene<MainMenu>("mainMenu");
         _sceneManager.AddSceneWithParams<Player>("player", "Assets/dj_mag.osb");
-        _sceneManager.LoadScene("mainMenu");
+        _sceneManager.LoadAndActivateScene("mainMenu");
+
+        var soundEffect = new EditorSoundEffect("Assets/click-close.ogg");
     }
     
     private void Close()
     {
+        SoundManager.Instance.UnloadMusicStreams();
         Raylib.CloseAudioDevice();
         Raylib.CloseWindow();
     }

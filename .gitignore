@@ -1,3 +1,6 @@
 .idea
 obj
 bin
+**.mp3
+**.ogg
+**.wav
